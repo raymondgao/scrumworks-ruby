@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "scrumworks-ruby"
   gem.require_paths = ["lib"]
   gem.version       = Scrumworks::VERSION
+
+  gem.add_runtime_dependency "savon", ["~> 1.1.0"]
 end
