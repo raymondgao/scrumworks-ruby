@@ -1,6 +1,6 @@
-# Scrumworks::Ruby
+# ScrumWorks Ruby Interface
 
-TODO: Write a gem description
+Wraps the ScrumWorks SOAP API with a Ruby interface.
 
 ## Installation
 
