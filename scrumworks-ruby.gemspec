@@ -3,7 +3,7 @@ require File.expand_path('../lib/scrumworks/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Eric Barendt"]
-  gem.email         = ["ebarendt@collab.net"]
+  gem.email         = ["ebarendt@gmail.com"]
   gem.description   = %q{Handles communicating with a ScrumWorks server via its API.}
   gem.summary       = %q{Handles communicating with a ScrumWorks server via its API.}
   gem.homepage      = ""
