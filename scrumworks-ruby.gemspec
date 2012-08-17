@@ -4,8 +4,8 @@ require File.expand_path('../lib/scrumworks/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Eric Barendt"]
   gem.email         = ["ebarendt@collab.net"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Handles communicating with a ScrumWorks server via its API.}
+  gem.summary       = %q{Handles communicating with a ScrumWorks server via its API.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
