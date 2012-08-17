@@ -1,5 +1,13 @@
+require "savon"
 require "scrumworks/version"
+require "scrumworks/client"
 
 module Scrumworks
-  # Your code goes here...
+
+  Savon.configure do |config|
+    config.log = false
+    config.log_level = :info
+  end
+  HTTPI.log = false
+
 end
