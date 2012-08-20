@@ -6,7 +6,7 @@ module Scrumworks
 
     def method_missing(method_name, *args)
       @client.request(method_name) do
-        soap.body = args.last
+        soap.body = args.last if args.last.is_a? Hash
       end.to_hash["#{method_name}_response".to_sym][:return]
     end
   end
