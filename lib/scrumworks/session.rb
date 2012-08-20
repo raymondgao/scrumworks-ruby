@@ -4,10 +4,10 @@ module Scrumworks
       @client = client
     end
 
-    def get_product_by_name(name)
-      @client.request(:get_product_by_name) do
-        soap.body = { product_name: name }
-      end.to_hash[:get_product_by_name_response][:return]
+    def method_missing(method_name, *args)
+      @client.request(method_name) do
+        soap.body = args.last
+      end.to_hash["#{method_name}_response".to_sym][:return]
     end
   end
 end
